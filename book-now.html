@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Added by HTTrack --><meta http-equiv="Content-Type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+    <head>
+        <meta charset="utf-8">
+        <title>Book Now - Family Fun Waterpark</title>
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet">
+        <link href="assets/css/color.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Oswald:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;1,600&amp;family=Poppins:wght@400;500;600;700&amp;family=Rubik:wght@400;600&amp;display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <script type="text/javascript">
+            function showUser1(str)
+            {
+            if (str=="")
+                {
+                    document.getElementById("txtHint1").innerHTML="";
+                    return;
+                }
+                    if (window.XMLHttpRequest)
+                        {// code for IE7+, Firefox, Chrome, Opera, Safari
+                        xmlhttp=new XMLHttpRequest();
+                    }
+                    else
+                        {// code for IE6, IE5
+                        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                        xmlhttp.onreadystatechange=function()
+                    {
+                    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                    {
+                        document.getElementById("txtHint1").innerHTML=xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET.html","book-now103d2.html?q="+str,true);
+                xmlhttp.send();
+            }
+        </script>
+        
+        <script type="text/javascript">
+            function showUser2(str)
+            {
+            if (str=="")
+                {
+                    document.getElementById("txtHint2").innerHTML="";
+                    return;
+                }
+                    if (window.XMLHttpRequest)
+                        {// code for IE7+, Firefox, Chrome, Opera, Safari
+                        xmlhttp=new XMLHttpRequest();
+                    }
+                    else
+                        {// code for IE6, IE5
+                        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                        xmlhttp.onreadystatechange=function()
+                    {
+                    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                    {
+                        document.getElementById("txtHint2").innerHTML=xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET.html","book-now203d2.html?q="+str,true);
+                xmlhttp.send();
+            }
+        </script>
+    </head>
+    
+    <body>
+        
+        <div class="page-wrapper">
+
+            <section class=" gray-bg p_relative" style="background-image: url(assets/images/main-bg.png);">
+                <div class="cform-1-shape-2"><img src="assets/images/shape/shape-8.png" alt=""></div>
+                    <div class="auto-container">
+                        <div class="row">
+                            <div class="col-lg-7 p_relative">
+                                <div class="cform-1-shape-1"><img src="assets/images/shape/shape-2.png" alt=""></div>
+                                <div class="section_heading"> <a href="index.html"><img src="assets/images/logo.png" style="width:100px;" alt=""></a> <br>
+                                    <h3 class="section_heading_title_big mb_20" style="font-size:35px;">Book Your Tickets Now</h3>
+                                </div>
+                                <div class="form-1-wrap" style="padding:30px;">
+                                    <style>
+                                        label { font-weight:bold; } 
+                                    </style>
+                                    <form method="post" name="form">
+                                        <div class="row row-20 clearfix">
+                                            <div class="form-group col-md-6">
+                                                <label>Booking Date</label>
+                                                <input type="date" name="booking_date" required="">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Booking Time</label>
+                                                <input type="text" value="06:00 AM To 09:00 PM" readonly name="booking_time" required="">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Your Name</label>
+                                                <input type="text" name="name" value="" placeholder="" required="">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Your Email</label>
+                                                <input type="email" name="email" value="" placeholder="" required="">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Phone Number</label>
+                                                <input type="text" name="contactno" value="" placeholder="" required="">
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label>Number of Adults</label>
+                                                <input type="text" name="noof_adult" value="" placeholder="" required="" onChange="showUser1(this.value)">
+                                                <span id="txtHint1"></span> 
+                                            </div>
+                                            <div class="form-group col-md-3">
+                                                <label>Number of children</label>
+                                                <input type="text" name="noof_child" value="" placeholder="" required="" onChange="showUser2(this.value)">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <h3>Tickets Price :</h3>
+                                            <p>(Including: Hi-tea & dinner)</p>
+                                            <ul>
+                                                <li>Child: ₹600&nbsp;|&nbsp;Adult: ₹700</li>
+                                            </ul>
+                                            <span id="txtHint2"></span>     
+                                        </div>
+                          
+                                        <div class="form-group col-md-12">
+                                            <input type="submit" name="insert" value="Continue Order >>>" class="btn-1">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    <div class="col-lg-5">
+                        <div class="image"><img src="assets/images/resource/illustration-2.html" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/jquery.fancybox.js"></script>
+        <script src="assets/js/isotope.js"></script>
+        <script src="assets/js/appear.js"></script>
+        <script src="assets/js/wow.js"></script>
+        <script src="assets/js/TweenMax.min.js"></script>
+        <script src="assets/js/swiper.min.js"></script>
+        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+        <script src="assets/js/parallax-scroll.js"></script>
+        <script src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="assets/js/booking-form.js"></script>
+        <script src="assets/js/odometer.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
